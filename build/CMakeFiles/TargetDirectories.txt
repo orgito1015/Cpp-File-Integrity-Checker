@@ -1,3 +1,0 @@
-/home/runner/work/Cpp-File-Integrity-Checker/Cpp-File-Integrity-Checker/build/CMakeFiles/file_integrity_checker.dir
-/home/runner/work/Cpp-File-Integrity-Checker/Cpp-File-Integrity-Checker/build/CMakeFiles/edit_cache.dir
-/home/runner/work/Cpp-File-Integrity-Checker/Cpp-File-Integrity-Checker/build/CMakeFiles/rebuild_cache.dir
