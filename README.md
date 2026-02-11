@@ -1,10 +1,10 @@
 
-# 🔐 C++ File Integrity Checker
+#  C++ File Integrity Checker
 
 A simple cybersecurity-focused C++ project that calculates SHA-256 hashes
 to detect file modifications.
 
-## 🚀 Build
+##  Build
 
 ```bash
 mkdir build
@@ -13,16 +13,16 @@ cmake ..
 make
 ```
 
-## ▶️ Run
+##  Run
 
 ```bash
 ./file_integrity_checker <file>
 ```
 
-## 📚 What You Learn
+##  What You Learn
 - Secure file I/O
 - Cryptographic hashing
 - OpenSSL usage
 - CMake basics
 
-⚠️ Educational purpose only.
+ Educational purpose only.
