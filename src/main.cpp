@@ -9,8 +9,6 @@
 #include <algorithm>
 #include <map>
 #include <openssl/evp.h>
-#include <openssl/md5.h>
-#include <openssl/sha.h>
 
 namespace fs = std::filesystem;
 
@@ -379,11 +377,11 @@ int main(int argc, char** argv) {
     if (!loadFile.empty()) {
         auto results = checker.verifyFromDatabase(loadFile);
         int passed = 0, failed = 0;
-        for (const auto& [filename, verified] : results) {
+        for (const auto& [file_path, is_verified] : results) {
             if (!verbose) {
-                std::cout << filename << ": " << (verified ? "PASS" : "FAIL") << std::endl;
+                std::cout << file_path << ": " << (is_verified ? "PASS" : "FAIL") << std::endl;
             }
-            if (verified) passed++;
+            if (is_verified) passed++;
             else failed++;
         }
         std::cout << "\nVerification Results: " << passed << " passed, " << failed << " failed\n";
